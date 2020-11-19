@@ -1,0 +1,387 @@
+/*VARIABLES*/
+/*CONDICIONALES*/
+.card-body {
+  background-color: #B298DC;
+}
+
+/*mixin*/
+.titular {
+  font-weight: bold;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.titular p {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: deslizamiento;
+          animation-name: deslizamiento;
+}
+
+@-webkit-keyframes deslizamiento {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes deslizamiento {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  opacity: 90% !important;
+  margin: auto;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  z-index: 150;
+}
+
+.header__h1Header {
+  font-size: 25px;
+}
+
+/*GALERIA*/
+.galeria {
+  margin: auto;
+}
+
+.galeria__contenedor {
+  width: 100%;
+  margin: auto;
+}
+
+.galeria .galeria__contenedor {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 520px) {
+  .galeria .galeria__contenedor {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+  }
+}
+
+@media (min-width: 728px) {
+  .galeria .galeria__contenedor {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .galeria .galeria__contenedor {
+    -ms-grid-columns: (33.3%)[3];
+        grid-template-columns: repeat(3, 33.3%);
+  }
+  .galeria__contenedor {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .galeria__contenedor {
+    width: 1200px;
+  }
+}
+
+.galeria__imagenColumna {
+  margin: 5px;
+}
+
+.galeria__imagenColumna .img {
+  width: 100%;
+}
+
+.galeria__imagenColumna:hover .galeria__imagenColumna--img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.galeria__imagenColumna--img {
+  width: 100%;
+}
+
+.galeria__colorDos {
+  color: #457b9d;
+  text-align: justify;
+  border: outset;
+}
+
+/*FONDO DONACIONES*/
+.fondo__imagenFondo {
+  margin-top: 150px;
+}
+
+.fondo__colorTitulo {
+  margin-top: 150px;
+  color: black;
+  text-align: center;
+}
+
+.fondo__colorTitulo--colorUno {
+  color: #1d3557;
+  text-align: justify;
+  border: outset;
+}
+
+.overlay {
+  margin-top: 30px;
+}
+
+.bg-dark {
+  background-color: #B298DC !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a.nav-link {
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.d-none {
+  font-family: 'Lato',sans-serif;
+  text-align: right !important;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.d-none.fn {
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.d-none {
+  background-color: #f3b6f89f;
+  font-weight: bold;
+}
+
+iframe {
+  margin-top: 100px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.colorTitulo {
+  margin-top: 150px;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Lato',sans-serif;
+  text-align: right;
+  font-size: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h5 {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.imagenPortada .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+}
+
+.imagenPortada .overlay .container,
+.imagenPortada .overlay .row {
+  height: 100%;
+}
+
+.misionVisionValores {
+  font-size: 20px;
+}
+
+.btn-manzi {
+  background-color: #9D50BB;
+  color: white;
+}
+
+.btn-outline-light {
+  color: black;
+  background-color: #9D50BB;
+}
+
+.boton {
+  margin-left: 47%;
+}
+
+.colorTres {
+  color: #6F2DBD;
+  text-align: justify;
+  border: outset;
+}
+
+.pElCambio {
+  text-align: center;
+}
+
+.imagenPortada {
+  margin-bottom: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.portada {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.iconosPortada {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+}
+
+.video {
+  margin-top: 100px;
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+.sliderActividades {
+  margin-top: 150px;
+}
+
+.card {
+  background-color: #B298DC;
+}
+
+.card-text-p {
+  margin-bottom: 23px;
+}
+
+/*FOOTER*/
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__portadaFin {
+  margin: auto;
+  width: 100%;
+}
+
+.footer__redes {
+  margin-bottom: -120px;
+  padding-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vg;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__redes--redesSociales {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: desplazoRedes;
+          animation-name: desplazoRedes;
+}
+
+.footer__redes ul li {
+  display: inline-block;
+}
+
+@-webkit-keyframes desplazoRedes {
+  from {
+    margin-left: 300%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes desplazoRedes {
+  from {
+    margin-left: 300%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.footer__colorTitulo {
+  margin-top: 150px;
+  color: white;
+  text-align: center;
+}
+
+.footer__colorTitulo--enLaLucha {
+  font-size: 20px;
+}
+
+.footer-copyright {
+  background-color: #d64ad6;
+}
+
+.container-footer {
+  background-color: #9d50bba8;
+}
+/*# sourceMappingURL=style.css.map */
