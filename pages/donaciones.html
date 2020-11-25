@@ -48,75 +48,77 @@
           </div>
         </nav>
       </header>
-    <!--Fondo-->
-        <section class="fondo__imagenFondo">
-            <img src="#" alt="fondo"> 
-            <div class="titular">
-            <h1 class = "fondo__colorTitulo">¡Tu ayuda es muy importante!</h1>
-            <p class = "fondo_colorTitulo--color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto 
-          repudiandae quod accusantium laborum ab nostrum culpa nisi a cupiditate 
-          temporibus sunt cumque autem quibusdam placeat assumenda obcaecati, explicabo, 
-          corporis fuga!</p>
+            <!--Form-->
+            <div class="banner3">
+              <div class="py-5 banner" style="background-image:url(../images/tecla_donar.jpg);">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-7 col-lg-5">
+                      <h3 class="my-3 text-black font-weight-medium text-uppercase">Formulario de donacion</h3>
+                      <div class="bg-white">
+                        <div class="form-row border-bottom">
+                          <div class="p-4 left border-right w-50">
+                            <label class="text-inverse font-12 text-uppercase">Nombre</label>
+                            <input type="text" class="border-0 p-0 font-14 form-control" placeholder="Ingrese su nombre" />
+                          </div>
+                          <div class="p-4 right w-50">
+                            <label class="text-inverse font-12 text-uppercase">Apellido</label>
+                            <input type="text" class="border-0 p-0 font-14 form-control" placeholder="Ingrese su apellido" />
+                          </div>
+                        </div>
+                        <div class="form-row border-bottom p-4">
+                          <label class="text-inverse font-12 text-uppercase">Email</label>
+                          <input type="text" class="border-0 p-0 font-14 form-control" placeholder="Ingrese su email" />
+                        </div>
+                        <div class="form-row border-bottom p-4">
+                          <label class="text-inverse font-12 text-uppercase">Numero de telefono</label>
+                          <input type="text" class="border-0 p-0 font-14 form-control" placeholder="Ingrese su numero de telefono" />
+                        </div>
+                        <div class="form-row border-bottom p-4">
+                          <label class="text-inverse font-12 text-uppercase">Monto a donar</label><br>
+                          <label><br>
+                            <input type="radio" name="title" value="$250">
+                            $250
+                            </label>
+                            <label><br>
+                            <input type="radio" name="title" value="$500">
+                            $500
+                            </label>
+                            <label><br>
+                            <input type="radio" name="title" value="$1000">
+                            $1000
+                            </label>
+                            <label><br>
+                            <input type="radio" name="title" value="Otro">
+                            Otro
+                            </label>
+                        </div>
+                        <div class="form-row border-bottom p-4">
+                          <label class="text-inverse font-12 text-uppercase">Seleccione metodo de pago/Tipo de donacion</label>
+                        <div class="form-row border-bottom p-4">
+                          <select>
+                            <option>Tarjeta de credito</option>
+                            <option>Mercado Pago</option>
+                            <option>Transferencia bancaria</option>
+                            <option>Efectivo en nuestra sede</option>
+                            <option>Ropa o alimentos en nuestra sede</option>
+                           </select>
+                        </div>
+                          <label class="text-inverse font-12 text-uppercase">Mensaje</label>
+                          <textarea col="1" row="1" class="border-0 p-0 font-weight-light font-14 form-control" placeholder="Envianos un mensaje"></textarea>
+                        </div>
+                        <div>
+                          <button class="m-0 border-0 py-4 font-14 font-weight-medium btn btn-danger-gradiant btn-block position-relative rounded-0 text-center text-white text-uppercase">
+                              <span>Realizar donacion</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    <!--Formulario de donaciones-->
-    <form action="/signup" method="post">
-        <p>
-          <label>Nombre</label><br>
-          <input type="text" name="nombre" placeholder="Nombre">
-        </p>
-        <p>
-         <label>Apellido</label><br>
-         <input type="text" name="apellido" placeholder="Apellido">
-        </p>
-        <p>
-         <label>Telefono</label><br>
-         <input type="tel" name="celular" required placeholder="Telefono">
-        </p>
-        <p>
-         <label>Email</label><br>
-         <input type="email" name="email" required placeholder="Email">
-        </p>
-        <p>
-         <label>Monto a donar</label><br>
-         <label>
-         <input type="radio" name="title" value="$250">
-         $250
-         </label>
-         <label>
-         <input type="radio" name="title" value="$500">
-         $500
-         </label>
-         <label>
-         <input type="radio" name="title" value="$1000">
-         $1000
-         </label>
-         <label>
-         <input type="radio" name="title" value="Otro">
-         Otro
-         </label>
-        </p>
-        <p>
-         <label>Seleccione medio de pago/Tipo de donación</label><br>
-        <select>
-         <option>Tarjeta de credito</option>
-         <option>Mercado Pago</option>
-         <option>Transferencia bancaria</option>
-         <option>Efectivo en nuestra sede</option>
-         <option>Ropa o alimentos en nuestra sede</option>
-        </select>
-        </p>
-        <p>
-         <label>
-         <input type="checkbox" value="terms">
-         Estoy de acuerdo con los <a href="#">terminos y condiciones</a>
-         </label>
-        </p>
-        <p>
-         <button><abbr data-toggle="tooltip" title="Será reenviado a una pagina segura para poder realizar la donación">Realizar donación</abbr></button>
-         <button type="reset">Resetear formulario</button>
-        </p>
-    </form>
+            <!--Fin-->
     <!-- Footer-->
     <footer class="page-footer font-small cyan darken-3">  
          <div class="container-footer">

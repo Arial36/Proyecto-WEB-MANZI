@@ -80,22 +80,22 @@ header {
 
 @media (min-width: 520px) {
   .galeria .galeria__contenedor {
-    -ms-grid-columns: (100%)[1];
-        grid-template-columns: repeat(1, 100%);
+    -ms-grid-columns: (100%);
+        grid-template-columns:repeat(1,100%);
   }
 }
 
 @media (min-width: 728px) {
   .galeria .galeria__contenedor {
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
+    -ms-grid-columns: (50%);
+        grid-template-columns:repeat(2,50%);
   }
 }
 
 @media (min-width: 1024px) {
   .galeria .galeria__contenedor {
-    -ms-grid-columns: (33.3%)[3];
-        grid-template-columns: repeat(3, 33.3%);
+    -ms-grid-columns: (33.3%) ;
+        grid-template-columns:repeat(3,33.3%);
   }
   .galeria__contenedor {
     width: 1024px;
