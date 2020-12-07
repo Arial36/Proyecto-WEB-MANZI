@@ -1,0 +1,183 @@
+.col{
+    margin-top:50px ;
+    margin-bottom: 50px;
+}
+.container2{
+    margin-bottom:150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.d-block {
+    height:100%;
+    width:100%;
+  }
+
+  img {
+    height:150px;
+    width:100%;
+  }
+  
+  .item{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .item-card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .item-card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .item-card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:300px; 
+  }
+  @media (max-width: 750px){
+    .card-text{
+      height:300x; 
+    }
+  }
+  @media (max-width: 400px){
+    .imagenPortada{
+      margin-top: 120px;
+    }
+  }
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+  .carousel-inner{
+    margin-top: -20px;
+  }
+  
+  .maincont
+  {
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+  }
+  .tofullpagecard
+  {
+    background-image:url('../images/Sobre.png'); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    height: 260px;
+    width: 250px;
+    border-radius: 10px;
+    color:white;
+    transition:box-shadow 0.5s,transform 0.8s,background-color 1s;
+    box-shadow: 0px 10px 25px #00000064;
+    max-width: none;
+  }
+  .tofullpagecard:hover
+  {
+    cursor: pointer;
+    box-shadow:-79px 100px 74px -10px #00000064;
+    transform: rotate(15deg);
+  }
+  #vidtitle
+  {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: bolder !important;
+    text-align: center;
+  }
+  #athr
+  {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  #playbutton i
+  {
+    font-size: 5rem;
+    color:white;
+  }
+  #emb 
+  {
+    display: none;
+    box-shadow:-79px 100px 74px -10px #00000061;
+  }
+  iframe
+  {
+    animation-name: rot;
+    animation-duration: 1s;
+    height: 315px !important;
+    width: 560px !important;
+    
+  }
+  #closebutton
+  {
+    color: white;
+    display: none;
+  }
+  #closebutton:hover
+  {
+    cursor: pointer;
+  }
+  @keyframes rot
+  {
+    0%
+    {
+      transform: rotate(15deg);
+      border-radius: 10px;
+      height: 100px;
+      width: 250px;
+    }
+    50%
+    {
+      border-radius: 10px;
+    }
+    100%
+    {
+      transform: rotate(0deg);
+      border-radius: 0px;
+      height: 315px;
+      width: 560px;
+    }
+  }
+  #emb{
+    margin-left: -110px !important;
+  }
+  

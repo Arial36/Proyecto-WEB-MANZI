@@ -1,190 +1,362 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descriprion" content="Somos una Asociación Civil que tiene como prioridad ayudar a quienes más lo necesitan. Particularmente nos enfocamos en los niños, quienes entendemos son el futuro de nuestro país y quienes más nos necesitan.">
-    <meta name = "keywords" content ="Ayuda, Asociacion civil, Manzi, Actividades Manzi, Que es Manzi, Que es la Asociación Civil Manzi">
-    <title>Quienes somos MANZI</title>
-    <!-- MANZI CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"  href="../css/style_manzi.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descriprion"
+    content="Somos una Asociación Civil que tiene como prioridad ayudar a quienes más lo necesitan. Particularmente nos enfocamos en los niños, quienes entendemos son el futuro de nuestro país y quienes más nos necesitan.">
+  <meta name="keywords"
+    content="Ayuda, Asociacion civil, Manzi, Actividades Manzi, Que es Manzi, Que es la Asociación Civil Manzi">
+  <title>Quienes somos MANZI</title>
+  <!-- MANZI CSS -->
+  <link rel="Icon" href="../images/MANZI Icon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style_manzi.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../scripts/scripts.js"></script>
 </head>
+
 <body>
-  <a href="https://wa.me/541131329298?text=¿En%20que%20podemos%20ayudarte?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-    <header>
-        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <img class="img__manzi" src="../images/MANZI.png" alt="Logo MANZI">
-              <h1 class="header__h1Header">Asociacion Civil Manzi</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Quienes somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="actividades.html">Actividades</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contactos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="donaciones.html">DONACIONES</a>
-                </li>
-              </ul>
+  <div id="float-cta">
+    <span>Envianos un whatsapp!</span>
+    <a href="javascript:void(0);">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    <div class="whatsapp-msg-container">
+      <div class="whatsapp-msg-header">
+        <h6>WhatsApp Chat</h6>
+      </div>
+      <div class="whatsapp-msg-body">
+        <textarea name="whatsapp-msg" class="whatsapp-msg-textarea"
+          placeholder="Hola, podés consultar vía whatsapp..."></textarea>
+      </div>
+      <div class="whatsapp-msg-footer">
+        <button type="button" class="btn-whatsapp-send">Enviar</button>
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="img__manzi" src="../images/MANZI.png" alt="Logo MANZI">
+          <h1 class="header__h1Header">Asociacion Civil Manzi</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contactos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="donaciones.html">DONACIONES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="static-slider10" style="background-image:url(../images/Imagen\ 35.jpg)">
+    <div class="container5">
+      <!-- Row  -->
+      <div class="row justify-content-center ">
+        <!-- Column -->
+        <div class="col-md-8 align-self-center text-center">
+          <h1 class="my-3 title text-white text-uppercase text-center">¡Conócenos y súmate al equipo!</h1>
+          <h6 class="text-white font-weight-normal op-8">Nos une la pasión por ayudar. Creemos en la lucha por una
+            educación digna para todos y la igualdad de oportunidades. Soñamos con un mundo donde todos los seres
+            humanos trabajemos juntos, en aras de construir un mundo mejor. </h6>
+        </div>
+        <!-- Column -->
+
+      </div>
+    </div>
+  </div>
+  <!-- Card -->
+
+
+  <div class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark2 text-light">
+    <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active text-center p-4">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0"><i class="fa fa-quote-left"></i> “Llevadera es la labor cuando muchos comparten la fatiga.”
+            </p>
+            <div class="blockquote-footer">Homero <cite title="Source Title">Filósofo Griego</cite>
+              <!-- Client review stars -->
+              <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+              <p class="client-review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </p>
             </div>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center p-4">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0"><i class="fa fa-quote-left"></i> “Tras la conducta de cada uno depende el destino de todos.”
+            </p>
+            <div class="blockquote-footer">Alejandro Magno <cite title="Source Title">Rey</cite>
+              <!-- Client review stars -->
+              <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+              <p class="client-review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center p-4">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0"><i class="fa fa-quote-left"></i> “¿Cuál es la esencia de la vida? Servir a otros y hacer el
+              bien.”
+            </p>
+            <div class="blockquote-footer">Aristóteles <cite title="Source Title">Filósofo</cite>
+              <!-- Client review stars -->
+              <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+              <p class="client-review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
+        <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </div>
+  <!--Galeria-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+    <div class="controls-top">
+      <a class="black-text" href="#multi-item-example" data-slide="prev"></a>
+      <a class="black-text" href="#multi-item-example" data-slide="next"><i class=""></i></a>
+    </div>
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/chicos_manzi.jpg" alt="Card image cap">
           </div>
-        </nav>
-      </header>
-        <div class = "titular">
-        <h1 class = "colorTitulo">Nuestra historia</h1>
-         <p class = "colorUno">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Cupiditate ullam exercitationem quaerat aliquam. Reprehenderit 
-        quas odio eos facere maiores nesciunt? Nulla vitae quae sint ut 
-        atque ipsa culpa voluptatem aut!</p>
         </div>
-    <!--Galeria-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
-  <div class="controls-top">
-    <a class="black-text" href="#multi-item-example" data-slide="prev"></a>
-    <a class="black-text" href="#multi-item-example" data-slide="next"><i class=""></i></a>
-  </div>
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
 
-    <!--First slide-->
-    <div class="carousel-item active">
-
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/chicos_manzi.jpg"
-            alt="Card image cap">
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/manos_corazon.jpg" alt="Card image cap">
+          </div>
         </div>
+
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/corazon_madera.jpg" alt="Card image cap">
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/Slider1.jpg" alt="Card image cap">
+          </div>
+        </div>
+
       </div>
+      <!--/.First slide-->
 
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/manos_corazon.jpg"
-            alt="Card image cap">
+      <!--Second slide-->
+      <div class="carousel-item">
+
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/Slider2.jpg" alt="Card image cap">
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/corazon_madera.jpg"
-            alt="Card image cap">
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/Slider3.jpg" alt="Card image cap">
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/Slider1.jpg"
-            alt="Card image cap">
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/manos_agarre.jpg" alt="Card image cap">
+          </div>
         </div>
-      </div>
 
-    </div>
-    <!--/.First slide-->
-
-    <!--Second slide-->
-    <div class="carousel-item">
-
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/Slider2.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/Slider3.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/manos_agarre.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card1">
-          <img class="img-fluid" src="../images/chicos.jpg"
-            alt="Card image cap">
+        <div class="col-md-3 mb-3">
+          <div class="card1">
+            <img class="img-fluid" src="../images/chicos.jpg" alt="Card image cap">
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 
-</div>
-<!-- Card -->
-<div class="card card-cascade wider reverse">
+
 
   <!-- Card image -->
-  <div class="view view-cascade overlay">
-    <img class="card-img-top" src="../images/voluntariado.jpg"
-      alt="Card image cap">
-    <a href="#!">
-      <div class="mask rgba-white-slight"></div>
-    </a>
+  <div class="card card-cascade wider reverse">
+    <div class="view view-cascade overlay">
+      <img class="card-img-top" src="../images/voluntariado.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body card-body-cascade text-center">
+
+
+      <!-- Subtitle -->
+      <h6 class="font-weight-bold indigo-text py-2">Con vos, somos más</h6>
+      <!-- Text -->
+      <p class="card-text2">Manzi nace con la idea de ser una Asociación Civil que trabaja por tres pilares
+        fundamentales en la sociedad: La salud mental, la vivienda digna y los derechos del niño. Bajo esta
+        premisa dirigimos nuestros esfuerzos en ayudar a quienes más nos necesitan. Contamos con un plantel
+        de voluntarios excelente, con valores increíbles que codo a codo y día a día ayudan en la inmensa labor
+        de hacer, moldear y perfeccionar un mundo imperfecto. Si crees que tus valores y tus ganas de ayudar se
+        alinean con las nuestras, te invitamos a formar parte de nuestra gran familia. ¡Súmate!, ¡No nos prives
+        de contar con tu ayuda! Un mundo mejor esta esperándonos a todos. Descubrámoslo juntos.
+      </p>
+
+    </div>
+
   </div>
+  <!-- Card -->
+  <!-- Footer-->
+  <footer class="footer">
+    <div class="container bottom_border">
+      <div class="row">
+        <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Ayudanos a ayudar</h5>
+          <!--headin5_amrc-->
+          <p class="mb10">Podes ayudarnos haciendo una donación de dinero, de ropa o alimentos, o bien sumandote como
+            voluntario. ¡Con vos, el equipo esta completo!</p>
+          <p><i class="fa fa-location-arrow"></i> Lomas del Mirador - Olaguer 524 </p>
+          <p><i class="fa fa-phone"></i> 1131329298 </p>
+          <p><i class="fa fa fa-envelope"></i> info@manzi.com </p>
 
-  <!-- Card content -->
-  <div class="card-body card-body-cascade text-center">
 
-    <!-- Title -->
-    <h4 class="card-title"><strong>Nuestro Equipo</strong></h4>
-    <!-- Subtitle -->
-    <h6 class="font-weight-bold indigo-text py-2">Con vos, somos más</h6>
-    <!-- Text -->
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem perspiciatis
-      voluptatum a, quo nobis, non commodi quia repellendus sequi nulla voluptatem dicta reprehenderit, placeat
-      laborum ut beatae ullam suscipit veniam.
-    </p>
+        </div>
 
-  </div>
 
-</div>
-<!-- Card -->
-      <!-- Footer-->
-      <footer class="page-footer font-small cyan darken-3">  
-           <div class="container-footer">
-              <div>
-                <div class="col-md-12 py-5">
-                    <div class="mb-2 flex-center">
-                      <section class="footer__redes">
-                        <ul>
-                           <li><a href="#"><img class="footer__redes--redesSociales"  src="../images/red_facebook.png" width="" height="" alt="Facebook"></a></li>
-                           <li><a href="mailto:direccion@destinatario.com"><img class="footer__redes--redesSociales" src="../images/mail.png" width="" height="" alt="Mail"></a></li>
-                           <li><a href="#"><img class="footer__redes--redesSociales"  src="../images/red_instagram.png" width="" height="" alt="Instagram"></a></li>
-                        </ul>
-                       </section>
-                      <h1 class = "footer__colorTitulo">Asociacion Civil Manzi</h1>
-                      <p class = "footer__colorTitulo--enLaLucha">En la lucha por la salud mental, la defensa del niño y la vivienda digna</p>
-                    </div>
-                 </div>
-              </div>
-           </div>
-          <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a> Leandro M.Abraham - Proyecto CODERHOUSE</a>
-          </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Enlaces de ayuda</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Donaciones</a></li>
+            <li><a href="#">Voluntariado</a></li>
+            <li><a href="#">Visitanos</a></li>
+            <li><a href="#">Conoce nuestras actividades</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+
+
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Asociaciones amigas</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="#">Red Cooperar</a></li>
+            <li><a href="#">Club Leones</a></li>
+            <li><a href="#">Sombrero de Palia</a></li>
+            <li><a href="#">Minutti</a></li>
+            <li><a href="#">Impresentables de Devoto</a></li>
+            <li><a href="#">Asociacion Revivir Adictos a la Vida</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+
+
+        <div class=" col-sm-4 col-md  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Seguinos</h5>
+          <!--headin5_amrc ends here-->
+
+          <ul class="footer_ul2_amrc">
+            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+              <p>La ayuda esta en camino..<a href="#">https://www.twitter.com/</a></p>
+            </li>
+            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+              <p>De granitos de arena se forma la playa..<a href="#">https://www.twitter.com/</a></p>
+            </li>
+            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+              <p>Un mundo mejor es posible..<a href="#">https://www.twitter.com/</a></p>
+            </li>
+          </ul>
+          <!--footer_ul2_amrc ends here-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <ul class="foote_bottom_ul_amrc">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="pages/quienes_somos.html">Quienes somos</a></li>
+        <li><a href="pages/actividades.html">Actividades</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+        <li><a href="pages/donaciones.html">Donaciones</a></li>
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center">Copyright @2020 | Hecho por Leandro M. Abraham <a href="https://www.coderhouse.com/">para
+          CODERHOUSE</a></p>
+
+      <ul class="social_footer_ul">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <!--social_footer_ul ends here-->
+    </div>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
